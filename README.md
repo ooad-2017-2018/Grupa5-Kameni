@@ -68,3 +68,4 @@ Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgov
 
 •	Komunikacija sa drugim korisnicima sistema (kupcima)
 
+
