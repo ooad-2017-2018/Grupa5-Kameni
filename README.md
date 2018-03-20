@@ -68,4 +68,16 @@ Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgov
 
 •	Komunikacija sa drugim korisnicima sistema (kupcima)
 
+# Akteri
+
+## Poslovnica koja koristi sistem za poslovanje autodijelovima 
+
+Poslovnica koja koristi sistem za poslovanje autodijelovima instalira sistem na svoj racunar, te nakon instaliranja bira one funkcionalnosti koje odgovaraju njenom poslovanju (poslovnica dostavlja informacije o tome da li se bavi maloprodajom, veleprodajom, servisom itd). Radnici poslovnice imaju mogucnost unosa svojih artikala u bazu podataka sistema, inormacije o narucivanju, dobavljanju, cijenama autodijelova itd.
+
+Akteri koji pripadaju poslovnici su uposlenici koji rade direktno sa sistemom preko racunara, vlasik koji ima ovlastenje nad svim funkcionalnostima sistema te dostavljač koji preko aplikacije biva informisan o vremenu i mjestu dostave.
+
+## Kupac koji koristi sistem za kupovinu autodijelova
+
+Kupac koji koristi sistem za kupovinu autodijelova instalira aplikacuje te kreira profil na istoj. Nakon toga kupac ima pregled svih poslovnica koje koriste sistem za poslovanje autodijelovima te bira onu poslovnicu čijem katalogu zeli pristupiti. Kupcu je omogućeno naručivanje i plaćanje autodijelova, komunikacija sa poslovnicom te ostalim korisnicima sistema za kupovinu autodijelova. 
+
 
