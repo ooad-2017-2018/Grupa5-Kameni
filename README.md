@@ -27,26 +27,44 @@ Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgov
 ## Funkcionalnosti sistema sa aspekta uposlenika
 
 •	Olakšana kontrola dostave artikala
+
 •	Orgazovan sistem dobavaljanja artikala
 
 •	Olaksana pretraga traženih artikala
+
 •	Jednostavan unos novih artikala u sistem
+
 •	Uvezanost sa ostalim korisnicima sistema 
+
 •	Brza i jednostavnija naplata (kreditne kartice) 
+
 •	Olakšano dokumentovanje odrađenih poslovanja
+
 •	Brzi odgovori na zahtjeve kupaca
+
 •	Kontrola pristupa artiklima firme
+
 •	Omogućen pregled financijskog stanja poslovnice 
+
 •	Pregled najprodavanijih artikala
+
 •	Upozorenje o nestajanju artikala na stanju
+
 •	Automatsko obracunavanje popusta
+
 •	Informacije o uspjehu poslovnice na mjesecnom, godišnjem nivou
 
 ## Funkcionalnosti sistema sa aspekta kupca
 
 •	Olakšana pretraga i izbor autodijelova
+
 •	Brzo naručivanje željenih artikala
+
 •	Pristup autodijelovima svih poslovnica koje koriste funkcionalnosti sistema za poslovanje
+
 •	Omogućena komunikacija sa poslovnicom preko privatnih poruka
+
 •	Plaćanje dijelova prilikom narudžbe
+
 •	Komunikacija sa drugim korisnicima sistema (kupcima)
+
