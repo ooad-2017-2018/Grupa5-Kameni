@@ -27,7 +27,9 @@ Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgov
 ## Funkcionalnosti sistema sa aspekta uposlenika
 
 •	Olakšana kontrola dostave artikala
+
 •	Orgazovan sistem dobavaljanja artikala
+
 •	Olaksana pretraga traženih artikala
 •	Jednostavan unos novih artikala u sistem
 •	Uvezanost sa ostalim korisnicima sistema 
