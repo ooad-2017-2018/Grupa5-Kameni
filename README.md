@@ -10,8 +10,8 @@
   
 ## Opis teme 
 
->Sistem ima namjenu da olakša poslovanje trgovine autodijelovima prilikom maloprodaje, veleprodaje, nabavke proizvoda kao i evidenciju o artiklima u skladištu, i pruzanja usluga servisa.
->Bosna i Hercegovina je država u kojoj je relativno skupo popravljati automobile i kupovati potrebne dijelove u ovlaštenim servisima uzimajući u obzir prosječno primanje stanovnika. Sistem je prilagođen tome da iskustvo kupovine u običnim radnjama, sa aspekta sigurnosti i povjerenja približi onome koji će kupac dobiti kao kupovinom u ovlaštenom servisu.
+Sistem ima namjenu da olakša poslovanje trgovine autodijelovima prilikom maloprodaje, veleprodaje, nabavke proizvoda kao i evidenciju o artiklima u skladištu, i pruzanja usluga servisa.
+Bosna i Hercegovina je država u kojoj je relativno skupo popravljati automobile i kupovati potrebne dijelove u ovlaštenim servisima uzimajući u obzir prosječno primanje stanovnika. Sistem je prilagođen tome da iskustvo kupovine u običnim radnjama, sa aspekta sigurnosti i povjerenja približi onome koji će kupac dobiti kao kupovinom u ovlaštenom servisu.
 
 # Procesi u sistemu
 
