@@ -68,16 +68,20 @@ Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgov
 
 •	Komunikacija sa drugim korisnicima sistema (kupcima)
 
-# Akteri
+## Akteri sistema za poslovanje sa autodijelovima
+Nakon instaliranja aplikacije na računar, ovlaštena osoba prilaže osnovne informacije o poslovnici. Informacije bira iz ponuđenih opcija (da li se poslovnica bavi maloprodajom, veleprodajom, servisom itd). Nakon toga se kreira „profil“ poslovnice koji će biti vidljiv svim drugim poslovnicama koje su korisnici aplikacije.
 
-## Poslovnica koja koristi sistem za poslovanje autodijelovima 
+Administrator poslovnice je zadužen za registrovanje uposlenika, kojima se prilikom registracije dodjeljuje korisničko ime i šifra pomoću koje će se prijavljivati na sistem. 
 
-Poslovnica koja koristi sistem za poslovanje autodijelovima instalira sistem na svoj racunar, te nakon instaliranja bira one funkcionalnosti koje odgovaraju njenom poslovanju (poslovnica dostavlja informacije o tome da li se bavi maloprodajom, veleprodajom, servisom itd). Radnici poslovnice imaju mogucnost unosa svojih artikala u bazu podataka sistema, inormacije o narucivanju, dobavljanju, cijenama autodijelova itd.
+Uposlenici će u skladu sa svojim zaduženjima koristiti aplikaciju. 
+Tu će biti uposlenici koji će unositi artikle u bazu podataka, koji će odobravati narudžbe i imati pristup svemu sto se dešava u sistemu. Vlasnik poslovnice ima ovlašteni pristup dijelovima aplikacije koji daju informacije o poslovanju i o financijskom stanju poslovnice.
 
-Akteri koji pripadaju poslovnici su uposlenici koji rade direktno sa sistemom preko racunara, vlasik koji ima ovlastenje nad svim funkcionalnostima sistema te dostavljač koji preko aplikacije biva informisan o vremenu i mjestu dostave.
+Dostavljač će imati posebno dizajniran sistem koji će mu brzo i efikasno davati informacije o tome gdje  i kada treba dostaviti robu, te kako u najkracem vremenu obaviti posao.
 
-## Kupac koji koristi sistem za kupovinu autodijelova
+Serviser će moci brzo odgovarati na zahtjeve kupaca, te će se praviti red čekanja korisnika u skladu sa njihovim zahtjevima i dostupnosti servisa. Serviser će imati mogućnost naručivanja autodijelova, te ako ista poslovnica ima i servis i prodaju, oni će biti uvezani, te će serviser imati informaciju o artiklima koji su na stanju. Ostvaruje se brže i efikasnije pružanje usluga servisa.
 
-Kupac koji koristi sistem za kupovinu autodijelova instalira aplikacuje te kreira profil na istoj. Nakon toga kupac ima pregled svih poslovnica koje koriste sistem za poslovanje autodijelovima te bira onu poslovnicu čijem katalogu zeli pristupiti. Kupcu je omogućeno naručivanje i plaćanje autodijelova, komunikacija sa poslovnicom te ostalim korisnicima sistema za kupovinu autodijelova. 
+## Akteri koji koriste usluge poslovnica koje koriste sistem za poslovanje autodijelovima
+
+Kupac koji koristi sistem za kupovinu autodijelova instalira aplikacuje te kreira profil na istoj. Nakon toga kupac ima pregled svih poslovnica koje koriste sistem za poslovanje autodijelovima te bira onu poslovnicu čijem katalogu zeli pristupiti. Kupcu je omogućeno naručivanje i automatsko plaćanje autodijelova, prijava kvara, te usluge servisa koje koriste aplikaciju.
 
 
