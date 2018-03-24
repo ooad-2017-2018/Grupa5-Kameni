@@ -68,7 +68,8 @@ Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgov
 
 •	Komunikacija sa drugim korisnicima sistema (kupcima)
 
-## Akteri sistema za poslovanje sa autodijelovima
+## Akteri
+
 Nakon instaliranja aplikacije na računar, ovlaštena osoba prilaže osnovne informacije o poslovnici. Informacije bira iz ponuđenih opcija (da li se poslovnica bavi maloprodajom, veleprodajom, servisom itd). Nakon toga se kreira „profil“ poslovnice koji će biti vidljiv svim drugim poslovnicama koje su korisnici aplikacije.
 
 Administrator poslovnice je zadužen za registrovanje uposlenika, kojima se prilikom registracije dodjeljuje korisničko ime i šifra pomoću koje će se prijavljivati na sistem. 
@@ -80,8 +81,6 @@ Dostavljač će imati posebno dizajniran sistem koji će mu brzo i efikasno dava
 
 Serviser će moci brzo odgovarati na zahtjeve kupaca, te će se praviti red čekanja korisnika u skladu sa njihovim zahtjevima i dostupnosti servisa. Serviser će imati mogućnost naručivanja autodijelova, te ako ista poslovnica ima i servis i prodaju, oni će biti uvezani, te će serviser imati informaciju o artiklima koji su na stanju. Ostvaruje se brže i efikasnije pružanje usluga servisa.
 
-## Akteri koji koriste usluge poslovnica koje koriste sistem za poslovanje autodijelovima
-
 Kupac koji koristi sistem za kupovinu autodijelova instalira aplikacuje te kreira profil na istoj. Nakon toga kupac ima pregled svih poslovnica koje koriste sistem za poslovanje autodijelovima te bira onu poslovnicu čijem katalogu zeli pristupiti. Kupcu je omogućeno naručivanje i automatsko plaćanje autodijelova, prijava kvara, te usluge servisa koje koriste aplikaciju.
 
-
+Jos jedan od aktera ce biti administrator koji će odobravati zahtjeve poslovnica za kreiranje "profila" u sistemu te unos informacija o poslovnicama u bazu podataka.
