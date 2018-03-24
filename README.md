@@ -15,12 +15,16 @@ Bosna i Hercegovina je država u kojoj je relativno skupo popravljati automobile
 
 # Procesi u sistemu
 
-### Procesi sa apekta prodavača
+Nakon instaliranja aplikacije na racunar, ovlašteno lice poslovnice će kreirati „profil“ poslovnice. Informacije o poslovnici se šalju do administratora koji provjerava da li poslovnica zadovoljava određene uslove, i ako poslovnica ispunjava uslove, administrator dodaje informacije u bazu podataka te odobrava poslovnici korištenje aplikacije. Nakon toga poslovnica ima mogućnost korištenja svih funckionalnosti aplikacije. Određeni uposlenik poslovnice će unijeti artikle u sistem, kreirati katalog itd. Aplikaciju koriste različiti uposlenici poslovnice.
 
-Prilikom kupovine dijelova za potrebe trgovine ili servisa, radnik nakon obavljene fakture unosi dijelove u sistem, pazeći na količinu svakog proizvoda. Proces može biti olakšan ukoliko i dobavljač ima sličan sistem pri čemu se unos vrši automatski. Drugim riječima, dobavljač se kontaktira preko aplikacije ukoliko je dobavljač uvezan, u najgorem slučaju radnik će sa spiska morati unositi artikle jer nema drugog načina. Prilikom prodaje određenog dijela stanje će se smanjiti automatski za prodanu količinu. Omogućena je i opcija rezervacije artikla za određenog kupca ukoliko je od povjerenja. U sistemu će biti registrovani svi kupci koji imaju popust u radnji, kao što su automehaničari ili česti kupci, kriteriji zavise od samog vlasnika autodijelava. Popust se automatski obračunava takvim kupcima. Poželjan je ugovor sa dostavljačkom kompanijom (A2B, FedEx) preko koje će se omogućiti dostava artikala u teritorijskim granicama koje određuje vlasnik. 
+Serviser će prilikom pristupa sistemu (sa korisničkim imenom i šifrom koja mu je dodijeljena od strane administratora poslovnice koji dodaje uposlenike u sistem)  imati opciju pristupa dijelovima na stanju, ako je riječ o poslovnici koja nudi usluge servisa i prodaje, a ako to nije slučaj, servis koji je registrovan u sistem će imati opciju pregleda poslovnica autodijelovima koje koriste isti sistem, te opciju narudžbe autodijelova od istih. Serviseri će putem aplikacije primati zahtjeve od korisnika aplikacije kojima su potrebne usluge servisa, te će imati organizovano poslovanje zbog redova čekanja koji se automatski biti kreirani u skladu sa zahtjevima korisnika.
 
-### Procesi sa aspekta kupca
-Korisnički interfejs za kupca će se razlikovati od interfejsa za radnike trgovine. Razlika će se ogledati u opcijama koje kupac ima u odnosu na radnike. Kupac može da unese podatke svog automobila i da traži određeni proizvod, pretražuje cijene, dostupne maloprodajne radnje, kao i da naruči proizvod. Omogućeno je i otkazivanje narudžbe u određenom vremenskom roku.
+Dostavljač će prilikom pristupa sistemu (sa korisničkim imenom i šifrom koja mu je dodijeljena od strane administratora poslovnice koji dodaje uposlenike u sistem)  imati pristup svim zahtjevima za dostavu. Zahtjevi će se obrađivati brzo i efikasno, te će dostava biti izvršena u najkraćem mogućem vremenu. Putem aplikacije dostavljaču se šalje adresa i vrijeme dostave.
+
+Vlasnik poslovnice će nakon registrovanja na sistem imati pristup informacijama o poslovanju, finasijskom stanju poslovnice, te zahtjevima kupaca za popust. Vlasnik u skladu sa ispunjavanjem određenih uslova (ne)odobrava zahtjev kupaca. Vlasnik ima kontrolu i nadzor nad trgovinom i poslovanjem.
+
+Kupac će morati kreirati račun prilikom registrovanja na sistem, te će se njegove informacije ubaciti u bazu podataka od strane administratora. Nakon registrovanja na sistem, kupac ima više opcija. Opcije uključuju informacije o poslovnicama i servisima  koji koriste aplikaciju, pristup njihovom katalogu, narudzbi autodijelova od istih, zahtjev za dostavu i zahtjev za servisom. Kupac ce imati i opciju slanja privatnih poruka poslovnicama i servisima. Nakon poslanih zahtjeva, zahtjevi pristižu poslovnicama i servisima putem našeg sistema, obrađuju se brzo i efikasno i svaki kupac dobija odgovor na svoje zahtjeve u najkraćem vremenu.
+
 
 # Funkcionalnosti
 
