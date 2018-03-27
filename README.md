@@ -15,13 +15,23 @@ Bosna i Hercegovina je država u kojoj je relativno skupo popravljati automobile
 
 # Procesi u sistemu
 
+## Instaliranje aplikacije i kreiranje korisnickog racuna
+
 Nakon instaliranja aplikacije na racunar, ovlašteno lice poslovnice će kreirati „profil“ poslovnice. Informacije o poslovnici se šalju do administratora koji provjerava da li poslovnica zadovoljava određene uslove, i ako poslovnica ispunjava uslove, administrator dodaje informacije u bazu podataka te odobrava poslovnici korištenje aplikacije. Nakon toga poslovnica ima mogućnost korištenja svih funckionalnosti aplikacije. Određeni uposlenik poslovnice će unijeti artikle u sistem, kreirati katalog itd. Aplikaciju koriste različiti uposlenici poslovnice.
+
+## Pristup servisera sistemu i njegovo koristenje istog 
 
 Serviser će prilikom pristupa sistemu (sa korisničkim imenom i šifrom koja mu je dodijeljena od strane administratora poslovnice koji dodaje uposlenike u sistem)  imati opciju pristupa dijelovima na stanju, ako je riječ o poslovnici koja nudi usluge servisa i prodaje, a ako to nije slučaj, servis koji je registrovan u sistem će imati opciju pregleda poslovnica autodijelovima koje koriste isti sistem, te opciju narudžbe autodijelova od istih. Serviseri će putem aplikacije primati zahtjeve od korisnika aplikacije kojima su potrebne usluge servisa, te će imati organizovano poslovanje zbog redova čekanja koji se automatski biti kreirani u skladu sa zahtjevima korisnika.
 
+## Organizacije dostave artikala
+
 Dostavljač će prilikom pristupa sistemu (sa korisničkim imenom i šifrom koja mu je dodijeljena od strane administratora poslovnice koji dodaje uposlenike u sistem)  imati pristup svim zahtjevima za dostavu. Zahtjevi će se obrađivati brzo i efikasno, te će dostava biti izvršena u najkraćem mogućem vremenu. Putem aplikacije dostavljaču se šalje adresa i vrijeme dostave.
 
+## Ovlaštenja vlasnika prilikom pristupa sistemu
+
 Vlasnik poslovnice će nakon registrovanja na sistem imati pristup informacijama o poslovanju, finasijskom stanju poslovnice, te zahtjevima kupaca za popust. Vlasnik u skladu sa ispunjavanjem određenih uslova (ne)odobrava zahtjev kupaca. Vlasnik ima kontrolu i nadzor nad trgovinom i poslovanjem.
+
+## Procesi prilikom korištenja sistema od strane musterija poslovnica i servisa 
 
 Kupac će morati kreirati račun prilikom registrovanja na sistem, te će se njegove informacije ubaciti u bazu podataka od strane administratora. Nakon registrovanja na sistem, kupac ima više opcija. Opcije uključuju informacije o poslovnicama i servisima  koji koriste aplikaciju, pristup njihovom katalogu, narudzbi autodijelova od istih, zahtjev za dostavu i zahtjev za servisom. Kupac ce imati i opciju slanja privatnih poruka poslovnicama i servisima. Nakon poslanih zahtjeva, zahtjevi pristižu poslovnicama i servisima putem našeg sistema, obrađuju se brzo i efikasno i svaki kupac dobija odgovor na svoje zahtjeve u najkraćem vremenu.
 
@@ -87,4 +97,4 @@ Serviser će moci brzo odgovarati na zahtjeve kupaca, te će se praviti red ček
 
 Kupac koji koristi sistem za kupovinu autodijelova instalira aplikacuje te kreira profil na istoj. Nakon toga kupac ima pregled svih poslovnica koje koriste sistem za poslovanje autodijelovima te bira onu poslovnicu čijem katalogu zeli pristupiti. Kupcu je omogućeno naručivanje i automatsko plaćanje autodijelova, prijava kvara, te usluge servisa koje koriste aplikaciju.
 
-Jos jedan od aktera ce biti administrator koji će odobravati zahtjeve poslovnica za kreiranje "profila" u sistemu te unos informacija o poslovnicama u bazu podataka.
+Jos jedan od aktera ce biti administrator sistema koji će odobravati zahtjeve poslovnica za kreiranje "profila" u sistemu te unos informacija o poslovnicama u bazu podataka.
