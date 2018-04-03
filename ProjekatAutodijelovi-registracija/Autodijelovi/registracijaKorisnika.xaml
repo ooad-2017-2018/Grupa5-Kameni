@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="Autodijelovi.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" RequestedTheme="Default">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <FlyoutBase.AttachedFlyout>
+            <DatePickerFlyout/>
+        </FlyoutBase.AttachedFlyout>
+        <TextBlock HorizontalAlignment="Center" Margin="0,39,0,0" Text="Registracija korisnika" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="168,84,52,0" Text="" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,96,0,0" Text="Ime: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,142,0,0" Text="Prezime: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="168,130,52,0" Text="" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="50,183,0,0" Text="E-mail adresa: " TextWrapping="Wrap" VerticalAlignment="Top" />
+        <TextBox HorizontalAlignment="Stretch" Margin="168,171,52,0" Text="" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Stretch" Margin="50,227,0,0" Text="Sifra: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,262,0,0" Text="Potvrda sifre: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,300,0,0" Text="Korisnicko ime: " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Stretch" Margin="168,289,52,0" Text="" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,374,0,0" Text="Registrujem se kao:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Stretch" Margin="168,215,52,0" VerticalAlignment="Top"/>
+        <PasswordBox HorizontalAlignment="Stretch" Margin="168,252,52,0" VerticalAlignment="Top" />
+        <ListView HorizontalAlignment="Center" Height="154" Margin="0,399,0,0" VerticalAlignment="Top" Width="231">
+            <ListViewItem Content="Automehanicar" Width="131"/>
+            <ListViewItem Content="Obican Kupac" HorizontalAlignment="Center"/>
+            <ListViewItem Content="Maloprodajna radnja" HorizontalAlignment="Center"/>
+        </ListView>
+        <AppBarButton HorizontalAlignment="Center" Icon="Accept" Label="Registruj se" Margin="0,549,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

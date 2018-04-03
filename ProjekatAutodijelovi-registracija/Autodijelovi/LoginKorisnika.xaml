@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Autodijelovi.LoginKorisnika"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <RelativePanel Background="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <RelativePanel Background="Gray" HorizontalAlignment="Center" Height="450" VerticalAlignment="Center" Width="696" Margin="294,136,-578,-231.6">
+            <TextBlock HorizontalAlignment="Left" Text="Korisničko ime: " FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Margin="112,170,-295.6,-203" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Text="Šifra: " FontSize="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Margin="112,232,-295.6,-264.2" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="33" Text="" VerticalAlignment="Top" Width="290" Margin="328,170,-546,-171" Background="#CCFFFFFF"/>
+            <TextBox HorizontalAlignment="Left" Height="33" Text="" VerticalAlignment="Top" Width="290" Margin="328,232,-546,-233" Background="#CCFFFFFF"/>
+            <Button Content="Prijavi se" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="216" Margin="241,331,-390.6,-358.2" Background="#CCFFFFFF" FontSize="22"/>
+            <Image Source="Resourses/Logo.jpg" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="216" Margin="241,55,-457,-131"/>
+        </RelativePanel>
+    </RelativePanel>
+
+
+</Page>
