@@ -14,7 +14,8 @@
 
     </UserControl.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-2004,-1857" RequestedTheme="Light">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Light" Margin="0,0,10,10">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="279*"/>
             <ColumnDefinition Width="131*"/>
@@ -24,19 +25,23 @@
             <RowDefinition Height="0*"/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <Image Source="Assets/autodijelovi.jpg" Margin="170,1113,139,-409" Grid.RowSpan="3" Grid.ColumnSpan="2"/>
-        <Image Source="Assets/K.jpg" Margin="1080,-11827,205.074,-10199" Grid.RowSpan="3"/>
-        <TextBox BorderThickness="0"  HorizontalAlignment="Left" Margin="464,909,0,0" Text="Korisnicko ime: " VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="121" UseLayoutRounding="False" Width="634" d:LayoutRounding="Auto" FontSize="80" FontFamily="Arial Rounded MT Bold" RequestedTheme="Light">
-            <TextBox.RenderTransform>
+        <Image Source="Assets/K.jpg" Margin="-128,-663,-128,513" RenderTransformOrigin="-3.836,7.967" Height="150" Width="200" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Image.RenderTransform>
+                <CompositeTransform ScaleY="-1" TranslateY="-2240.1"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source="Assets/autodijelovi.jpg" Height="580" Width="1000" Grid.ColumnSpan="2" Margin="-468,-105,-532,-475" Grid.RowSpan="3"/>
+        <TextBlock  HorizontalAlignment="Left" Margin="254,246,-467,-297" Text="Korisnicko ime: " VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="51" UseLayoutRounding="False" Width="213" d:LayoutRounding="Auto" FontSize="30" FontFamily="Arial Rounded MT Bold" RequestedTheme="Light" Grid.ColumnSpan="2" Grid.RowSpan="3">
+            <TextBlock.RenderTransform>
                 <CompositeTransform Rotation="0.243"/>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <TextBox BorderThickness="3" BorderBrush="Black" HorizontalAlignment="Left" Margin="1080,920,0,0" Text="" VerticalAlignment="Top"  Width="718" RequestedTheme="Light" Height="116" FontSize="80" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="808,1134,0,0" Text="Sifra: " TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="312" FontSize="80"/>
-        <TextBox BorderThickness="3" BorderBrush="Black" HorizontalAlignment="Left" Margin="1080,1134,0,0" Text="" VerticalAlignment="Top" Width="718" Height="116" Grid.ColumnSpan="2"/>
-        <Button Content="Log in" HorizontalAlignment="Left" Margin="1080,1376,0,0" VerticalAlignment="Top" FontSize="80" Height="186" Width="317"/>
-        <TextBlock HorizontalAlignment="Left" Margin="103,336,-1066,-555" Text="Autodijelovi" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="160" FontFamily="Axure Handwriting" Height="219" Width="963"  FontWeight="Normal" FontStyle="Italic" Grid.ColumnSpan="2" Grid.RowSpan="3" />
-        <TextBlock HorizontalAlignment="Left" Margin="1535,336,-2261,-528" Text="Kameni" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="160" FontFamily="Axure Handwriting" Width="726" RenderTransformOrigin="0.609,0.542" FontStyle="Italic" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="korisnicko" BorderThickness="3" BorderBrush="Black" HorizontalAlignment="Left" Margin="504,233,-827,-285" Text="" VerticalAlignment="Top"  Width="323" RequestedTheme="Light" Height="52" FontSize="30" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged" Grid.RowSpan="3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="386,314,-698,-406" Text="Sifra: " TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="312" FontSize="30" Grid.ColumnSpan="2" Grid.RowSpan="3" SelectionChanged="TextBlock_SelectionChanged"/>
+        <TextBox x:Name="sifra" BorderThickness="3" BorderBrush="Black" HorizontalAlignment="Left" Margin="504,302,-827,-354" Text="" VerticalAlignment="Top" Width="323" Height="52" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="30"/>
+        <Button Content="Log in" HorizontalAlignment="Left" Margin="917,263,-1167,-317" VerticalAlignment="Top" FontSize="30" Height="54" Width="250" Click="Button_Click" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="87,81,-569,-171" Text="Autodijelovi" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontFamily="Axure Handwriting" Height="90" Width="482"  FontWeight="Normal" FontStyle="Italic" Grid.ColumnSpan="2" Grid.RowSpan="3" />
+        <TextBlock HorizontalAlignment="Left" Margin="838,81,-1388,-173" Text="Kameni" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontFamily="Axure Handwriting" Width="550" RenderTransformOrigin="0.609,0.542" FontStyle="Italic" Grid.ColumnSpan="2" Grid.RowSpan="3" Height="92"/>
 
     </Grid>
 </Page>

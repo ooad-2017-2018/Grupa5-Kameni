@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Autodijelovi.Models;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,6 +27,42 @@ namespace Autodijelovi
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var korisnickoIme =korisnicko.Text;
+            var sif =sifra.Text ;
+
+            var kupac = DataSource.ProvjeraKupca(korisnickoIme, sif);
+            
+            if (kupac!= null)
+            {
+
+                
+                this.Frame.Navigate(typeof(MainPage), kupac);
+            }
+            else
+            {
+                var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
+               
+                await dialog.ShowAsync();
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void sifra_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

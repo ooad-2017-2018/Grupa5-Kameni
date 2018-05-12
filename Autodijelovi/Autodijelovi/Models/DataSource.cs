@@ -44,12 +44,16 @@ namespace Autodijelovi.Models
             return _kupci.Where(k => k.Sifra.Equals(sifra)).FirstOrDefault();
         }        public static Kupac ProvjeraKupca(string korisnickoIme, string sifra)
         {
-            Kupac rezultat = new Kupac();
+            //Kupac rezultat = new Kupac();
             foreach (var k in DajSveKupce())
             {
-                if (k.KorisnickoIme == korisnickoIme && k.Sifra == sifra) rezultat = k;
+                if (k.KorisnickoIme == korisnickoIme && k.Sifra == sifra)
+                {
+                    Kupac rezultat = new Kupac();
+                    return rezultat;
+                }
             }
-            return rezultat;
+            return null;
         }
 
 

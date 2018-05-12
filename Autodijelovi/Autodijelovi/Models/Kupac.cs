@@ -14,6 +14,10 @@ namespace Autodijelovi.Models
         float popust;
         int brojNarudzbi;
 
+        public Kupac()
+        {
+
+        }
        /* public Kupac(string ime, string prezime, DateTime datumRegistrovanja, string korisnickoIme, string sifra, float popust, int brojNarudzbi)
         {
             this.Ime = ime;
