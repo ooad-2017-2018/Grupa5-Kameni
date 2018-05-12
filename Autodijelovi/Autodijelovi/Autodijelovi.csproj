@@ -110,6 +110,9 @@
     <Compile Include="Models\Poslovnica.cs" />
     <Compile Include="Models\Skladiste.cs" />
     <Compile Include="Models\Uposlenik.cs" />
+    <Compile Include="Pocetna.xaml.cs">
+      <DependentUpon>Pocetna.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\KupacViewModel.cs" />
   </ItemGroup>
@@ -124,6 +127,8 @@
     <Content Include="Assets\autodijelovi.jpg" />
     <Content Include="Assets\K.jpg" />
     <Content Include="Assets\kamenje.jpg" />
+    <Content Include="Assets\money.jpg" />
+    <Content Include="Assets\pocetna.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -141,6 +146,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
