@@ -20,31 +20,26 @@ namespace Autodijelovi
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Pocetna : Page
+    public sealed partial class KupacIzbor : Page
     {
-        public Pocetna()
+        public KupacIzbor()
         {
             this.InitializeComponent();
+        }
 
+        private void Sljedeci_Navigated(object sender, NavigationEventArgs e)
+        {
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Sljedeci.Navigate(typeof(KupacIzbor));
-
-        }
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-            
-           
+            Sljedeci.Navigate(typeof(MainPage));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
-          
-           
+            Sljedeci.Navigate(typeof(KupacRegistrovanje));
         }
     }
 }

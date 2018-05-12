@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Autodijelovi.KupacIzbor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/korpica.jpg" Margin="-19,-97,19,97"/>
+        <Button Content="Log In" HorizontalAlignment="Left" Margin="152,563,0,0" VerticalAlignment="Top" FontSize="50" Width="404" Background="WhiteSmoke" BorderBrush="Black" FontFamily="Axure Handwriting" BorderThickness="5" Click="Button_Click"/>
+        <Button Content="Kreiraj novi račun"   HorizontalAlignment="Left" Margin="732,568,0,0" VerticalAlignment="Top" FontSize="50" Width="475" Background="WhiteSmoke" BorderBrush="Black" FontFamily="Axure Handwriting" BorderThickness="5" Click="Button_Click_1"/>
+        <Frame Name="Sljedeci" Navigated="Sljedeci_Navigated"/>
+    </Grid>
+</Page>

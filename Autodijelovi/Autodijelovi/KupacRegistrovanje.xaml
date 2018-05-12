@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Autodijelovi.KupacRegistrovanje"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="-405,0,-386,10">
+        <Image Source="Assets/nesto.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="666,137,0,0" Text="Za kreiranje korisnickog racuna unesite sljedece podatke: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" Width="1027" FontFamily="Bell MT"/>
+        <TextBlock HorizontalAlignment="Left" Margin="942,249,0,0" Text="Ime: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="51" RenderTransformOrigin="2.232,-1.133"/>
+        <TextBox HorizontalAlignment="Left" Margin="1017,249,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.54" FontSize="15" Width="167" Height="27" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="905,319,0,0" Text="Prezime: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="24" Width="82" RenderTransformOrigin="2.232,-1.133"/>
+        <TextBox HorizontalAlignment="Left" Margin="1017,314,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.54" FontSize="15" Width="167" Height="27" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="1017,377,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.54" FontSize="15" Width="167" Height="27" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="1017,442,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.54" FontSize="15" Width="167" Height="27" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="847,382,0,0" Text="Korisnicko ime: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="40" Width="137" RenderTransformOrigin="2.232,-1.133"/>
+        <TextBlock HorizontalAlignment="Left" Margin="916,447,0,0" Text="Sifra: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="51" RenderTransformOrigin="2.232,-1.133"/>
+        <DatePicker HorizontalAlignment="Left" Margin="968,518,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="739,523,0,0" Text="Datum registrovanja: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="197" RenderTransformOrigin="2.232,-1.133"/>
+        <Button Content="Sign Up" HorizontalAlignment="Left" Margin="1017,582,0,0" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="5" Width="133"/>
+    </Grid>
+</Page>
