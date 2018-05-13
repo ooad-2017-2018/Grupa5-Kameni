@@ -15,41 +15,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Autodijelovi
+namespace Autodijelovi.Models
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Pocetna : Page
+    public sealed partial class UposlenikDodavanjeArtikla : Page
     {
-        public Pocetna()
+        public UposlenikDodavanjeArtikla()
         {
             this.InitializeComponent();
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Sljedeci.Navigate(typeof(KupacIzbor));
-
-        }
-
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-            
-           
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-          
-           
-        }
-
-        private void Sljedeci_Navigated(object sender, NavigationEventArgs e)
-        {
-
         }
     }
 }

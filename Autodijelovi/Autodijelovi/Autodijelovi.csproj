@@ -122,12 +122,18 @@
     <Compile Include="Models\Poslovnica.cs" />
     <Compile Include="Models\Skladiste.cs" />
     <Compile Include="Models\Uposlenik.cs" />
+    <Compile Include="Models\UposlenikDodavanjeArtikla.xaml.cs">
+      <DependentUpon>UposlenikDodavanjeArtikla.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServisNarudzba.xaml.cs">
       <DependentUpon>ServisNarudzba.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UposlenikRegistracija.xaml.cs">
+      <DependentUpon>UposlenikRegistracija.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\KupacViewModel.cs" />
   </ItemGroup>
@@ -180,11 +186,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Models\UposlenikDodavanjeArtikla.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pocetna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ServisNarudzba.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UposlenikRegistracija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
