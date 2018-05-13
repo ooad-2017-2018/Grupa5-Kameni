@@ -40,7 +40,7 @@ namespace Autodijelovi
             {
 
                 
-                this.Frame.Navigate(typeof(MainPage), kupac);
+                this.Frame.Navigate(typeof(nakonLogin));
             }
             else
             {

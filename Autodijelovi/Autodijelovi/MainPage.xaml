@@ -42,6 +42,6 @@
         <Button Content="Log in" HorizontalAlignment="Left" Margin="917,263,-1167,-317" VerticalAlignment="Top" FontSize="30" Height="54" Width="250" Click="Button_Click" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
         <TextBlock HorizontalAlignment="Left" Margin="87,81,-569,-171" Text="Autodijelovi" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontFamily="Axure Handwriting" Height="90" Width="482"  FontWeight="Normal" FontStyle="Italic" Grid.ColumnSpan="2" Grid.RowSpan="3" />
         <TextBlock HorizontalAlignment="Left" Margin="838,81,-1388,-173" Text="Kameni" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontFamily="Axure Handwriting" Width="550" RenderTransformOrigin="0.609,0.542" FontStyle="Italic" Grid.ColumnSpan="2" Grid.RowSpan="3" Height="92"/>
-
+        <Frame Name="Sljedeci"/>
     </Grid>
 </Page>

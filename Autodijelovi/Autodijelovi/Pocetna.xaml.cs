@@ -51,5 +51,15 @@ namespace Autodijelovi
         {
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+           this.Frame.Navigate(typeof(Dostavica));
+        }
+
+        private void Sljedeci_Navigated_1(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

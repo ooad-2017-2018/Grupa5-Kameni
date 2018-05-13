@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="White">
+        
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="50,184,0,0" Text="Proizvođač:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="50,279,0,0" Text="Tip:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="50,374,0,0" Text="Godište:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic"/>
@@ -15,10 +16,11 @@
         <ListBox x:Name="listBoxProizvodac" HorizontalAlignment="Left" Height="41" Margin="325,184,0,0" VerticalAlignment="Top" Width="332"/>
         <ListBox x:Name="listBoxTip" HorizontalAlignment="Left" Height="41" Margin="325,279,0,0" VerticalAlignment="Top" Width="332"/>
         <ListBox x:Name="listBoxGodiste" HorizontalAlignment="Left" Height="41" Margin="325,374,0,0" VerticalAlignment="Top" Width="332"/>
-        <ListBox x:Name="listBoxNazivDijela" HorizontalAlignment="Left" Height="41" Margin="325,475,0,0" VerticalAlignment="Top" Width="332"/>
-        <TextBox x:Name="textBoxCijena" HorizontalAlignment="Left" Margin="872,320,0,0" Text="CIJENA" VerticalAlignment="Top" Height="95" Width="253" FontSize="48"/>
-        <Button x:Name="ButtonTrazi" Content="TRAŽI" HorizontalAlignment="Left" Margin="872,446,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Height="70" Width="253"/>
+        <ListBox x:Name="listBoxNazivDijela" HorizontalAlignment="Left" Height="41" Margin="325,475,0,0" VerticalAlignment="Top" Width="332" />
+        <Button x:Name="ButtonTrazi" Content="TRAŽI" HorizontalAlignment="Left" Margin="325,606,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Height="70" Width="253" BorderBrush="Gold" BorderThickness="5" Background="Black" Foreground="Goldenrod"  />
+        <Image Source="Assets/gume.jpg" Height="500" Margin="342,119,-342,101"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="508,57,0,0" Text="Katalog" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Axure Handwriting" FontSize="72"/>
-
+        <Button Content="BACK" HorizontalAlignment="Left" Margin="80,57,0,0" VerticalAlignment="Top" FontSize="25" Click="Button_Click"/>
+        
     </Grid>
 </Page>
