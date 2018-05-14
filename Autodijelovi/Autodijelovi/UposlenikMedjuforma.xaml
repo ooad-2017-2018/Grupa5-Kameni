@@ -13,7 +13,7 @@
         <TextBox HorizontalAlignment="Left" Margin="717,426,0,0" Text="" VerticalAlignment="Top" Width="330" Height="57"/>
         <TextBox HorizontalAlignment="Left" Margin="717,538,0,0" Text="" VerticalAlignment="Top" Width="330" Height="58"/>
         <TextBlock HorizontalAlignment="Left" Margin="462,771,0,0" Text="Nemate profil?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
-        <Button Content="Log-in" HorizontalAlignment="Left" Margin="669,648,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click1"/>
+        <Button Content="Log-in" HorizontalAlignment="Left" Margin="669,648,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click2"/>
         <HyperlinkButton Content="Registruj se" HorizontalAlignment="Left" Margin="650,765,0,0" VerticalAlignment="Top" FontSize="24" Click="Button_Click1"/>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="99,74,0,0" VerticalAlignment="Top" FontSize="22" Click="Button_Click"/>
     </Grid>

@@ -20,23 +20,19 @@ namespace Autodijelovi
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class UposlenikMedjuforma : Page
+    public sealed partial class UposlenikMainForma : Page
     {
-        public UposlenikMedjuforma()
+        public UposlenikMainForma()
         {
             this.InitializeComponent();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Pocetna));
+            this.Frame.Navigate(typeof(UposlenikDodavanjeArtikla));
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UposlenikRegistracija));
-        }
-        private void Button_Click2(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(UposlenikMainForma));
+            this.Frame.Navigate(typeof(Pocetna));
         }
     }
 }

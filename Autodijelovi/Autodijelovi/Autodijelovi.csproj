@@ -132,6 +132,12 @@
     <Compile Include="ServisNarudzba.xaml.cs">
       <DependentUpon>ServisNarudzba.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UposlenikDodavanjeArtikla.xaml.cs">
+      <DependentUpon>UposlenikDodavanjeArtikla.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UposlenikMainForma.xaml.cs">
+      <DependentUpon>UposlenikMainForma.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UposlenikMedjuforma.xaml.cs">
       <DependentUpon>UposlenikMedjuforma.xaml</DependentUpon>
     </Compile>
@@ -205,6 +211,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ServisNarudzba.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UposlenikDodavanjeArtikla.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UposlenikMainForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
