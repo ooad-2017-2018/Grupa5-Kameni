@@ -20,21 +20,11 @@ namespace Autodijelovi
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class KupacMeni : Page
+    public sealed partial class NijeImplementirano : Page
     {
-        public KupacMeni()
+        public NijeImplementirano()
         {
             this.InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(nakonLogin));
-        }
-
-        private void ButtonTrazi_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(NijeImplementirano));
         }
     }
 }

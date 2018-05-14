@@ -41,7 +41,7 @@ namespace Autodijelovi
                 obj.prezime = prezimetekst.Text;
                 obj.korisnickoIme = kimetekst.Text;
                 obj.sifra = sifra.Text;
-
+                
                 userTableObj.InsertAsync(obj);
                 MessageDialog msgDialog = new MessageDialog("Uspješno ste registrovani u sistem. Želimo van ugodno korištenje aplikacije Autodijelovi Kameni :) ");
 

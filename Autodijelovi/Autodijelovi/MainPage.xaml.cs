@@ -34,6 +34,8 @@ namespace Autodijelovi
             var korisnickoIme =korisnicko.Text;
             var sif =sifra.Text ;
 
+         
+            
             var kupac = DataSource.ProvjeraKupca(korisnickoIme, sif);
             
             if (kupac!= null)

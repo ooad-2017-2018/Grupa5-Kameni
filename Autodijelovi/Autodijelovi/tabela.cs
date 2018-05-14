@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Autodijelovi
 {
-    class tabela
+   public class tabela
     {
         public string id
         {

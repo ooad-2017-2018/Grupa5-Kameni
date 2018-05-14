@@ -125,6 +125,9 @@
     <Compile Include="nakonLogin.xaml.cs">
       <DependentUpon>nakonLogin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NijeImplementirano.xaml.cs">
+      <DependentUpon>NijeImplementirano.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
@@ -204,6 +207,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="nakonLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NijeImplementirano.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,8 @@ namespace Autodijelovi.Models
    public  class DataSource
     {
         #region Kupac - kreiranje testnih kupaca
+        IMobileServiceTable<tabela> userTableObj = App.MobileService.GetTable<tabela>();
+        
         private static List<Kupac> _kupci = new List<Kupac>()
         {
             new Kupac()
