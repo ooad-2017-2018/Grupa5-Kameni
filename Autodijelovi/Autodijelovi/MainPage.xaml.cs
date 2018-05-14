@@ -47,7 +47,8 @@ namespace Autodijelovi
                 var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
                
                 await dialog.ShowAsync();
-            }
+            }
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
