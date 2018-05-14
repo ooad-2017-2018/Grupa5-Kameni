@@ -132,6 +132,7 @@
     <Compile Include="ServisNarudzba.xaml.cs">
       <DependentUpon>ServisNarudzba.xaml</DependentUpon>
     </Compile>
+    <Compile Include="tabela.cs" />
     <Compile Include="UposlenikDodavanjeArtikla.xaml.cs">
       <DependentUpon>UposlenikDodavanjeArtikla.xaml</DependentUpon>
     </Compile>
@@ -232,6 +233,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.8</Version>
     </PackageReference>
