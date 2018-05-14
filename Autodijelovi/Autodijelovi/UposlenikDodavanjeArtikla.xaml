@@ -5,29 +5,29 @@
     xmlns:local="using:Autodijelovi"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="915" Width="1500">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Height="44" Margin="63,50,0,0" Text="Unesite informacije o novom dijelu" TextWrapping="Wrap" VerticalAlignment="Top" Width="433" FontSize="25"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,166,0,0" Text="Naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,235,0,0" Text="Šifra artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,296,0,0" Text="Kategorija artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,361,0,0" Text="Količina artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,424,0,0" Text="Dio odgovara proizvođaću automobila:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="63" Width="250"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,506,0,0" Text="Model i godina vozila za koji ovaj dijel odgovara:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="61" Width="263"/>
-        <TextBlock HorizontalAlignment="Left" Margin="118,600,0,0" Text="Tip motora i snaga vozila:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="438,161,0,0" Text="" VerticalAlignment="Top" Width="230"/>
-        <TextBox HorizontalAlignment="Left" Margin="438,230,0,0" Text="" VerticalAlignment="Top" Width="230"/>
-        <TextBox HorizontalAlignment="Left" Margin="438,291,0,0" Text="" VerticalAlignment="Top" Width="230"/>
-        <TextBox HorizontalAlignment="Left" Margin="438,361,0,0" Text="" VerticalAlignment="Top" Width="230"/>
-        <ComboBox HorizontalAlignment="Left" Margin="438,595,0,0" VerticalAlignment="Top" Width="230"/>
-        <ComboBox HorizontalAlignment="Left" Margin="438,506,0,0" VerticalAlignment="Top" Width="230"/>
-        <ComboBox HorizontalAlignment="Left" Margin="438,424,0,0" VerticalAlignment="Top" Width="230"/>
-        <TextBlock HorizontalAlignment="Left" Margin="773,166,0,0" Text="Maloprodajna cijena " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="773,230,0,0" Text="Veleprodajna cijena:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
-        <Button Content="Dodaj artikal" HorizontalAlignment="Left" Margin="894,600,0,0" VerticalAlignment="Top" FontSize="20" Width="195"/>
-        <TextBox HorizontalAlignment="Left" Margin="992,154,0,0" Text="" VerticalAlignment="Top" Width="225" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="992,230,0,0" Text="" VerticalAlignment="Top" Width="225" FontSize="20"/>
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="220,752,0,0" VerticalAlignment="Top" FontSize="22" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="44" Margin="121,146,0,0" Text="Unesite informacije o novom dijelu" TextWrapping="Wrap" VerticalAlignment="Top" Width="433" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,255,0,0" Text="Naziv artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="122"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,337,0,0" Text="Šifra artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" Width="111"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,409,0,0" Text="Kategorija artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31" Width="166"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,485,0,0" Text="Količina artikla:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="144"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,560,0,0" Text="Dio odgovara proizvođaću automobila:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="74" Width="272"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,656,0,0" Text="Model i godina vozila za koji ovaj dijel odgovara:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="72" Width="286"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,747,0,0" Text="Tip motora i snaga vozila:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="245"/>
+        <TextBox HorizontalAlignment="Left" Margin="501,249,0,0" Text="" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="501,331,0,0" Text="" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="501,403,0,0" Text="" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Margin="501,485,0,0" Text="" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Left" Margin="501,742,0,0" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Left" Margin="501,656,0,0" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Left" Margin="501,560,0,0" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="865,255,0,0" Text="Maloprodajna cijena " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="196"/>
+        <TextBlock HorizontalAlignment="Left" Margin="865,331,0,0" Text="Veleprodajna cijena:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="192"/>
+        <Button Content="Dodaj artikal" HorizontalAlignment="Left" Margin="1000,747,0,0" VerticalAlignment="Top" FontSize="20" Width="212" Height="46"/>
+        <TextBox HorizontalAlignment="Left" Margin="1104,241,0,0" Text="" VerticalAlignment="Top" Width="244" FontSize="20" Height="46"/>
+        <TextBox HorizontalAlignment="Left" Margin="1104,331,0,0" Text="" VerticalAlignment="Top" Width="244" FontSize="20" Height="46"/>
+        <Button Content="Nazad" HorizontalAlignment="Left" Margin="60,55,0,0" VerticalAlignment="Top" FontSize="22" Click="Button_Click"/>
     </Grid>
 </Page>

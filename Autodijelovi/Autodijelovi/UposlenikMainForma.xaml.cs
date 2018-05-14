@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -33,6 +34,11 @@ namespace Autodijelovi
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Pocetna));
+        }
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            MessageDialog msgDialog = new MessageDialog("Funkcionalnost nije još implementirana, molimo budite strpljivi!");
+            msgDialog.ShowAsync();
         }
     }
 }

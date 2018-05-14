@@ -8,9 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Left" Margin="195,178,0,0" Text="Izaberite opciju" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
-        <Button Content="Unesite novi artikal u bazu" HorizontalAlignment="Left" Margin="282,318,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click"/>
-        <Button Content="Nazad" HorizontalAlignment="Left" Margin="282,761,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="209,245,0,0" Text="Izaberite opciju" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48"/>
+        <Button Content="Unesite novi artikal u bazu" HorizontalAlignment="Left" Margin="326,400,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click"/>
+        <Button Content="Nazad" HorizontalAlignment="Left" Margin="81,100,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click1"/>
+        <Button Content="Analiza poslovanja" HorizontalAlignment="Left" Margin="326,522,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click2"/>
 
     </Grid>
 </Page>
