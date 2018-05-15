@@ -11,6 +11,8 @@
         <Image Source="Assets/korpica.jpg" Margin="-19,-97,19,97"/>
         <Button Content="Log In" HorizontalAlignment="Left" Margin="152,563,0,0" VerticalAlignment="Top" FontSize="50" Width="404" Background="WhiteSmoke" BorderBrush="Black" FontFamily="Axure Handwriting" BorderThickness="5" Click="Button_Click"/>
         <Button Content="Kreiraj novi račun"   HorizontalAlignment="Left" Margin="732,568,0,0" VerticalAlignment="Top" FontSize="50" Width="475" Background="WhiteSmoke" BorderBrush="Black" FontFamily="Axure Handwriting" BorderThickness="5" Click="Button_Click_1"/>
-        <Frame Name="Sljedeci" Navigated="Sljedeci_Navigated"/>
+        <Frame Name="Sljedeci" Navigated="Sljedeci_Navigated">
+            <Button Content="Back" HorizontalAlignment="Left" Margin="1226,845,0,0" VerticalAlignment="Top" FontSize="36" Click="BackButton_Click"/>
+        </Frame>
     </Grid>
 </Page>

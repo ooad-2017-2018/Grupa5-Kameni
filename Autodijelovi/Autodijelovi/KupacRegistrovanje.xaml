@@ -18,8 +18,9 @@
         <TextBox HorizontalAlignment="Left" Margin="1017,442,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="-0.124,0.54" FontSize="15" Width="167" Height="27" BorderBrush="Black" Name="sifra"/>
         <TextBlock HorizontalAlignment="Left" Margin="847,382,0,0" Text="Korisnicko ime: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="40" Width="137" RenderTransformOrigin="2.232,-1.133"/>
         <TextBlock HorizontalAlignment="Left" Margin="916,447,0,0" Text="Sifra: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="51" RenderTransformOrigin="2.232,-1.133"/>
-        <DatePicker HorizontalAlignment="Left" Margin="968,518,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="739,523,0,0" Text="Datum registrovanja: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="197" RenderTransformOrigin="2.232,-1.133"/>
+        <DatePicker x:Name ="datePickerDatum" HorizontalAlignment="Left" Margin="1017,518,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="776,523,0,0" Text="Datum registrovanja: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="30" Width="197" RenderTransformOrigin="2.232,-1.133"/>
         <Button Content="Sign Up" HorizontalAlignment="Left" Margin="1017,582,0,0" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="5" Width="133" Name="SignUp" Click="SignUp_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="1563,687,0,0" VerticalAlignment="Top" FontSize="24" Click="BackButton_Click"/>
     </Grid>
 </Page>

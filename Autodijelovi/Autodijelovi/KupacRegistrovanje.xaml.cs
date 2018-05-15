@@ -34,25 +34,46 @@ namespace Autodijelovi
 
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (ValidirajUnos())
             {
-                tabela obj = new tabela();
-                obj.ime = imetekst.Text;
-                obj.prezime = prezimetekst.Text;
-                obj.korisnickoIme = kimetekst.Text;
-                obj.sifra = sifra.Text;
-                
-                userTableObj.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste registrovani u sistem. Želimo van ugodno korištenje aplikacije Autodijelovi Kameni :) ");
+                try
+                {
+                    tabela obj = new tabela();
+                    obj.ime = imetekst.Text;
+                    obj.prezime = prezimetekst.Text;
+                    obj.korisnickoIme = kimetekst.Text;
+                    obj.sifra = sifra.Text;
 
-                msgDialog.ShowAsync();
+                    userTableObj.InsertAsync(obj);
+                    MessageDialog msgDialog = new MessageDialog("Uspješno ste registrovani u sistem. Želimo van ugodno korištenje aplikacije Autodijelovi Kameni :) ");
+
+                    msgDialog.ShowAsync();
+
+                    this.Frame.Navigate(typeof(MainPage));
+                }
+                catch (Exception ex)
+                {
+                    MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                    msgDialogError.ShowAsync();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageDialog msgDialogError = new MessageDialog("Error : " +
-               ex.ToString());
-                msgDialogError.ShowAsync();
+                MessageDialog msdiag = new MessageDialog("Niste unijeli podatke ispravno!");
+                msdiag.ShowAsync();
             }
+        }
+        private bool ValidirajUnos()
+        {
+            if (this.imetekst.Text.Length > 0 && this.prezimetekst.Text.Length > 0 && this.kimetekst.Text.Length > 0 && this.sifra.Text.Length > 0 && this.datePickerDatum.Date != DateTime.Now)
+            {
+                return true;
+            }
+            return false;
+        }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(KupacIzbor));
         }
     }
 }

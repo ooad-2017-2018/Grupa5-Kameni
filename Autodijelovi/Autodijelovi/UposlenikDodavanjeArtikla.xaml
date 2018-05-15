@@ -16,18 +16,18 @@
         <TextBlock HorizontalAlignment="Left" Margin="153,560,0,0" Text="Dio odgovara proizvođaću automobila:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="74" Width="272"/>
         <TextBlock HorizontalAlignment="Left" Margin="153,656,0,0" Text="Model i godina vozila za koji ovaj dijel odgovara:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="72" Width="286"/>
         <TextBlock HorizontalAlignment="Left" Margin="153,747,0,0" Text="Tip motora i snaga vozila:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="245"/>
-        <TextBox HorizontalAlignment="Left" Margin="501,249,0,0" Text="" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="501,331,0,0" Text="" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="501,403,0,0" Text="" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="501,485,0,0" Text="" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="501,742,0,0" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="501,656,0,0" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="501,560,0,0" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <TextBox x:Name ="textBoxNazivArt" HorizontalAlignment="Left" Margin="501,249,0,0" Text="" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
+        <TextBox x:Name="textBoxSifraArt" HorizontalAlignment="Left" Margin="501,331,0,0" Text="" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <TextBox x:Name="textBoxKategorijaArt" HorizontalAlignment="Left" Margin="501,403,0,0" Text="" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <TextBox x:Name="textBoxKolicinaArt" HorizontalAlignment="Left" Margin="501,485,0,0" Text="" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
+        <ComboBox x:Name="comboBoxArtOdgovaraMotoru" HorizontalAlignment="Left" Margin="501,742,0,0" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
+        <ComboBox x:Name="comboBoxArtOdgovaraModelu" HorizontalAlignment="Left" Margin="501,656,0,0" VerticalAlignment="Top" Width="250" Height="38" FontSize="20"/>
+        <ComboBox x:Name="comboBoxArtOdgovaraProiz" HorizontalAlignment="Left" Margin="501,560,0,0" VerticalAlignment="Top" Width="250" Height="37" FontSize="20"/>
         <TextBlock HorizontalAlignment="Left" Margin="865,255,0,0" Text="Maloprodajna cijena " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="196"/>
         <TextBlock HorizontalAlignment="Left" Margin="865,331,0,0" Text="Veleprodajna cijena:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="32" Width="192"/>
-        <Button Content="Dodaj artikal" HorizontalAlignment="Left" Margin="1000,747,0,0" VerticalAlignment="Top" FontSize="20" Width="212" Height="46"/>
-        <TextBox HorizontalAlignment="Left" Margin="1104,241,0,0" Text="" VerticalAlignment="Top" Width="244" FontSize="20" Height="46"/>
-        <TextBox HorizontalAlignment="Left" Margin="1104,331,0,0" Text="" VerticalAlignment="Top" Width="244" FontSize="20" Height="46"/>
+        <Button Content="Dodaj artikal" HorizontalAlignment="Left" Margin="1000,747,0,0" VerticalAlignment="Top" FontSize="20" Width="212" Height="46" Click="Button_Click1"/>
+        <TextBox x:Name="textBoxArtMaloprodajna" HorizontalAlignment="Left" Margin="1104,241,0,0" Text="" VerticalAlignment="Top" Width="244" FontSize="20" Height="46"/>
+        <TextBox x:Name="textBoxArtVeleprodajna" HorizontalAlignment="Left" Margin="1104,331,0,0" Text="" VerticalAlignment="Top" Width="244" FontSize="20" Height="46"/>
         <Button Content="Nazad" HorizontalAlignment="Left" Margin="60,55,0,0" VerticalAlignment="Top" FontSize="22" Click="Button_Click"/>
     </Grid>
 </Page>

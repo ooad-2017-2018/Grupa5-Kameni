@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -36,7 +37,20 @@ namespace Autodijelovi
         }
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UposlenikMainForma));
+            if(this.textBoxUsername.Text.Equals("radnik") && this.textBoxUserPass.Password.Equals("123"))
+            {
+                this.Frame.Navigate(typeof(UposlenikMainForma));
+            }
+            else if(this.textBoxUsername.Text.Length.Equals(0) && this.textBoxUserPass.Password.Length.Equals(0))
+            {
+                MessageDialog diag = new MessageDialog("Morate popuniti odgovarajuca polja!");
+                diag.ShowAsync();
+            }
+            else
+            {
+                MessageDialog diag = new MessageDialog("Pogresni unosni podaci");
+                diag.ShowAsync();
+            }
         }
     }
 }
