@@ -228,6 +228,10 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Slike\brisaci.jpg" />
     <Content Include="Slike\gume.jpg" />
+    <Content Include="Slike\jumb.jpg" />
+    <Content Include="Slike\kameni.jpg" />
+    <Content Include="Slike\kamenii.jpg" />
+    <Content Include="Slike\kk.jpg" />
     <Content Include="Slike\retrovizor.jpg" />
     <Content Include="Slike\rucice.jpg" />
     <Content Include="Slike\sjedista.jpg" />

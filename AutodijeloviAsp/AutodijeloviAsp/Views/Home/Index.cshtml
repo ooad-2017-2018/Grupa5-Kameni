@@ -10,30 +10,43 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
             margin-bottom: 50px;
             border-radius: 0;
+            color: Black;
         }
+
+        li {
+            border-right: 1px solid #bbb;
+            border-left: 1px solid #bbb;
+        }
+
+            li:last-child {
+                border-right: none;
+            }
 
         /* Remove the jumbotron's default bottom margin */
         .jumbotron {
-            margin-bottom: 0;
             padding-top: 240px;
-            background-image: url(https://www.cashforcarhamilton.nz/wp-content/uploads/2017/05/used-auto-parts-hamilton.png);
+            background-image: url(https://wallup.net/wp-content/uploads/2016/01/278423-zenvo-car-blue_cars-orange-luxury_cars-zenvo_st1.jpg);
             background-size: 100% 100%;
+       
         }
 
             .jumbotron .h1, .jumbotron h1 {
-                color: black;
+                color: LightBlue;
                 font-size: 80px;
                 font-weight: bold;
                 font-family: 'Shift', sans-serif;
-                //position: absolute;
+                position: absolute;
+                left: 220px;
+               bottom: 250px;
             }
 
         .panel-body img {
@@ -42,14 +55,34 @@
         }
         /* Add a gray background color and some padding to the footer */
         footer {
-            background-color: #f2f2f2;
             padding: 25px;
+        }
+
+        body {
+            background-color: Black;
+        }
+        h3{
+        color: LightBlue;
+        font-size: 40px;
+        font-weight: bold;
+        }
+        h4{
+        color:LightBlue;
+        font-size: 20px;
+        }
+        h5{
+        color:LightBlue;
+        font-size: 20px;
+        }
+        h6{
+        color: LightBlue;
+        font-size: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="jumbotron" style="" >
+    <div class="jumbotron" style="">
         <div class="container text-center">
             <h1>AUTODIJELOVI KAMENI</h1>
             <p></p>
@@ -64,77 +97,94 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">O nama</a>
+               
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">Pocetna</a></li>
-                    <li><a href="#">Katalog</a></li>
-                    <li><a href="#">Servis</a></li>
-                    <li><a href="#">Prodajna mjesta</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                <ul class="nav nav-tabs">
+                    <li><a data-toggle="tab" href="#Onama">O nama</a></li>
+                    <li class="active"><a data-toggle="tab" href="#pocetna">Pocetna</a></li>
+                    <li><a data-toggle="tab" href="#katalog">Katalog</a></li>
+                    <li><a data-toggle="tab" href="#">Servis</a></li>
+                    <li><a data-toggle="tab" href="#">Prodajna mjesta</a></li>
+                    <li><a data-toggle="tab" href="#kontakt">Kontakt</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Vaš račun</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <ul class="nav nav-tabs navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Kreiraj novi račun</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
                 </ul>
+
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">AKCIJA</div>
-                    <div class="panel-body"><img src="~/Slike/volann.jpg" class="img-responsive"  alt="Image"></div>
-                    <div class="panel-footer">Volkswagen volan po najpovoljnijoj cijeni</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">AKCIJA</div>
-                    <div class="panel-body"><img src="~/Slike/gume.jpg" class="img-responsive"  alt="Image"></div>
-                    <div class="panel-footer">Popust i do 30% !!!</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-success">
-                    <div class="panel-heading">AKCIJA</div>
-                    <div class="panel-body"><img src="~/Slike/brisaci.jpg" class="img-responsive"  alt="Image"></div>
-                    <div class="panel-footer">Za bolju vidljivost, brisaci sa popustom i do 50%</div>
-                </div>
-            </div>
-        </div>
-    </div><br>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">AKCIJA</div>
-                    <div class="panel-body"><img src="~/Slike/retrovizor.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                    <div class="panel-footer">Radi opreznije vožnje, priuštite si najkvalitetnije retrovizore po najpovoljnijoj cijeni</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">AKCIJA</div>
-                    <div class="panel-body"><img src="~/Slike/rucice.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                    <div class="panel-footer">Ručice za automatski mijenjac, budite brži od brzine!!!</div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="panel panel-success">
-                    <div class="panel-heading">AKCIJA</div>
-                    <div class="panel-body"><img src="~/Slike/sjedista.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                    <div class="panel-footer">Za najveću udobnost, sjedišta sa popustom do 40% !!!</div>
-                </div>
-            </div>
-        </div>
-    </div><br><br>
-
     
+
+        <div class="tab-content">
+            <div id="katalog" class="tab-pane fade">
+                <div class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">AKCIJA</div>
+                        <div class="panel-body"><img src="~/Slike/volann.jpg" class="img-responsive" alt="Image"></div>
+                        <div class="panel-footer">Volkswagen volan po najpovoljnijoj cijeni</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">AKCIJA</div>
+                        <div class="panel-body"><img src="~/Slike/gume.jpg" class="img-responsive" alt="Image"></div>
+                        <div class="panel-footer">Popust i do 30% !!!</div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">AKCIJA</div>
+                        <div class="panel-body"><img src="~/Slike/brisaci.jpg" class="img-responsive" alt="Image"></div>
+                        <div class="panel-footer">Za bolju vidljivost, brisaci sa popustom i do 50%</div>
+                    </div>
+                </div>
+            
+        
+
+             
+                      <div class="col-sm-4">
+                          <div class="panel panel-primary">
+                              <div class="panel-heading">AKCIJA</div>
+                              <div class="panel-body"><img src="~/Slike/retrovizor.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                              <div class="panel-footer">Radi opreznije vožnje, priuštite si najkvalitetnije retrovizore po najpovoljnijoj cijeni</div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="panel panel-danger">
+                              <div class="panel-heading">AKCIJA</div>
+                              <div class="panel-body"><img src="~/Slike/rucice.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                              <div class="panel-footer">Ručice za automatski mijenjac, budite brži od brzine!!!</div>
+                          </div>
+                      </div>
+                      <div class="col-sm-4">
+                          <div class="panel panel-success">
+                              <div class="panel-heading">AKCIJA</div>
+                              <div class="panel-body"><img src="~/Slike/sjedista.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+                              <div class="panel-footer">Za najveću udobnost, sjedišta sa popustom do 40% !!!</div>
+                          </div>
+                      </div>
+                  </div>
+            
+            <div id="pocetna" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="~/Slike/kamenii.jpg" class="img-responsive" alt="Cinque Terre" height="400" width="400">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Dobrodošli !!! </h3>
+                        <h4>Uživajte u mnogobrojnim pogodnostima naše veleposlovnice.</h4>
+                        <h5>Online naručivanje i kupovina autodijelova uvodi revoluciju u poslovanju.</h5>
+                        <h6>Brze i efikasne usluge su napokon svima na raspolaganju.</h6>
+                    </div>
+                </div>
+            </div>
+              </div>
+
+
 
 </body>
 </html>
