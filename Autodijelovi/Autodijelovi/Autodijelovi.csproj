@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="automobili.cs" />
     <Compile Include="Dostava.xaml.cs">
       <DependentUpon>Dostava.xaml</DependentUpon>
     </Compile>
@@ -128,6 +129,7 @@
     <Compile Include="NijeImplementirano.xaml.cs">
       <DependentUpon>NijeImplementirano.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ova.cs" />
     <Compile Include="Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
