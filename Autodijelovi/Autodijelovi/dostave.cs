@@ -6,32 +6,32 @@ using System.Threading.Tasks;
 
 namespace Autodijelovi
 {
-    public class automobili
+    public class dostave
     {
         public string id
         {
             get;
             set;
         }
-        public string naziv
+        public string id_dostavljaca
         {
             get;
             set;
         }
-        public string proizvodjac
+        public string adresa
         {
             get;
             set;
         }
-        public string motor
+        public string id_kupca
         {
             get;
             set;
         }
-        public string godiste
+        public string id_dostavnog_vozila
         {
             get;
             set;
         }
-    }
+}
 }

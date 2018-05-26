@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Autodijelovi
 {
-    public class automobili
+    public class poslovnice
     {
         public string id
         {
@@ -18,17 +18,27 @@ namespace Autodijelovi
             get;
             set;
         }
-        public string proizvodjac
+        public string lokacija
         {
             get;
             set;
         }
-        public string motor
+        public string kontakt_telefon
         {
             get;
             set;
         }
-        public string godiste
+        public string email
+        {
+            get;
+            set;
+        }
+        public string id_menadzera
+        {
+            get;
+            set;
+        }
+        public string id_nadredjene
         {
             get;
             set;

@@ -96,9 +96,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="automobili.cs" />
+    <Compile Include="automobili_artikli.cs" />
     <Compile Include="Dostava.xaml.cs">
       <DependentUpon>Dostava.xaml</DependentUpon>
     </Compile>
+    <Compile Include="dostave.cs" />
+    <Compile Include="dostave_artikli.cs" />
+    <Compile Include="poslovnice_podredjene.cs" />
+    <Compile Include="dostavljaci.cs" />
+    <Compile Include="dostavnaVozila.cs" />
     <Compile Include="KupacIzbor.xaml.cs">
       <DependentUpon>KupacIzbor.xaml</DependentUpon>
     </Compile>
@@ -108,6 +114,7 @@
     <Compile Include="KupacRegistrovanje.xaml.cs">
       <DependentUpon>KupacRegistrovanje.xaml</DependentUpon>
     </Compile>
+    <Compile Include="kupci.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -129,7 +136,7 @@
     <Compile Include="NijeImplementirano.xaml.cs">
       <DependentUpon>NijeImplementirano.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ova.cs" />
+    <Compile Include="poslovnice.cs" />
     <Compile Include="Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
