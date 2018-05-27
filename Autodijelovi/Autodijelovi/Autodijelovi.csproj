@@ -95,16 +95,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="automobili.cs" />
-    <Compile Include="automobili_artikli.cs" />
+    <Compile Include="DatabaseTables\artikli.cs" />
+    <Compile Include="DatabaseTables\automobili.cs" />
+    <Compile Include="DatabaseTables\automobili_artikli.cs" />
     <Compile Include="Dostava.xaml.cs">
       <DependentUpon>Dostava.xaml</DependentUpon>
     </Compile>
-    <Compile Include="dostave.cs" />
-    <Compile Include="dostave_artikli.cs" />
-    <Compile Include="poslovnice_podredjene.cs" />
-    <Compile Include="dostavljaci.cs" />
-    <Compile Include="dostavnaVozila.cs" />
+    <Compile Include="DatabaseTables\dostave.cs" />
+    <Compile Include="DatabaseTables\dostave_artikli.cs" />
+    <Compile Include="DatabaseTables\poslovnice_podredjene.cs" />
+    <Compile Include="DatabaseTables\dostavljaci.cs" />
+    <Compile Include="DatabaseTables\dostavnaVozila.cs" />
     <Compile Include="KupacIzbor.xaml.cs">
       <DependentUpon>KupacIzbor.xaml</DependentUpon>
     </Compile>
@@ -114,7 +115,7 @@
     <Compile Include="KupacRegistrovanje.xaml.cs">
       <DependentUpon>KupacRegistrovanje.xaml</DependentUpon>
     </Compile>
-    <Compile Include="kupci.cs" />
+    <Compile Include="DatabaseTables\kupci.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -136,15 +137,24 @@
     <Compile Include="NijeImplementirano.xaml.cs">
       <DependentUpon>NijeImplementirano.xaml</DependentUpon>
     </Compile>
-    <Compile Include="poslovnice.cs" />
+    <Compile Include="DatabaseTables\poslovnice.cs" />
     <Compile Include="Pocetna.xaml.cs">
       <DependentUpon>Pocetna.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseTables\poslovnice_zaposleni.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseTables\serviseri.cs" />
+    <Compile Include="DatabaseTables\servisi.cs" />
+    <Compile Include="DatabaseTables\servisi_zaposleni.cs" />
     <Compile Include="ServisNarudzba.xaml.cs">
       <DependentUpon>ServisNarudzba.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseTables\skladista.cs" />
+    <Compile Include="DatabaseTables\skladista_artikli.cs" />
+    <Compile Include="DatabaseTables\skladista_zaposleni.cs" />
     <Compile Include="tabela.cs" />
+    <Compile Include="DatabaseTables\uposlenici.cs" />
+    <Compile Include="DatabaseTables\uposlenici_podredjeni.cs" />
     <Compile Include="UposlenikDodavanjeArtikla.xaml.cs">
       <DependentUpon>UposlenikDodavanjeArtikla.xaml</DependentUpon>
     </Compile>
