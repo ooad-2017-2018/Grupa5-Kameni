@@ -13,6 +13,34 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <style>
         /* Remove the navbar's default rounded borders and increase the bottom margin */
@@ -36,7 +64,7 @@
             padding-top: 240px;
             background-image: url(https://wallup.net/wp-content/uploads/2016/01/278423-zenvo-car-blue_cars-orange-luxury_cars-zenvo_st1.jpg);
             background-size: 100% 100%;
-       
+
         }
 
             .jumbotron .h1, .jumbotron h1 {
@@ -78,6 +106,140 @@
         color: LightBlue;
         font-size: 20px;
         }
+        h7{
+            color:lightblue;
+            font-size:30px;
+        }
+       .racun .h8, .racun h8 {
+            color: lightblue;
+            font-size: 30px;
+            text-align:center;
+        }
+        .imgcontainer {
+            text-align: center;
+            position: relative;
+            height =200px;
+            width=200px;
+        }
+
+        img.avatar {
+            border-radius: 50%;
+        }
+        .sifra{
+            color:lightblue;
+            font-size:15px;
+        }
+        .email{
+            color:lightblue;
+            font-size:15px;
+        }
+        .zapamti{
+            color:lightblue;
+            font-size:15px;
+        }
+        .login{
+            background-color:lightblue;
+            color:black;
+            font-weight:bold;
+            text-align:center;
+        }
+        .ime{
+            color:lightblue;
+            font-size: 15px;
+        }
+        .zab{
+            color:lightblue;
+            font-size: 15px;
+        }
+        .log{
+            position:relative;
+            left:150px;
+        }
+        .racun{
+            position:relative;
+            left:200px;
+        }
+        * {box-sizing: border-box}
+
+.mySlides {display: none}
+.mySlides .img, .mySlides img {vertical-align: middle; height:400px; width:400px; }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+
+
+
+
+/* On smaller screens, decrease text size */
+@@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
     </style>
 </head>
 <body>
@@ -99,21 +261,19 @@
                 </button>
                
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav nav-tabs">
-                    <li><a data-toggle="tab" href="#Onama">O nama</a></li>
-                    <li class="active"><a data-toggle="tab" href="#pocetna">Pocetna</a></li>
-                    <li><a data-toggle="tab" href="#katalog">Katalog</a></li>
-                    <li><a data-toggle="tab" href="#">Servis</a></li>
-                    <li><a data-toggle="tab" href="#">Prodajna mjesta</a></li>
-                    <li><a data-toggle="tab" href="#kontakt">Kontakt</a></li>
-                </ul>
-                <ul class="nav nav-tabs navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Kreiraj novi račun</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
-                </ul>
-
-            </div>
+            
+            <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#Onama">O nama</a></li>
+                <li class="active"><a data-toggle="tab" href="#pocetna">Pocetna</a></li>
+                <li><a data-toggle="tab" href="#katalog">Katalog</a></li>
+                <li><a data-toggle="tab" href="#servis">Servis</a></li>
+                <li><a data-toggle="tab" href="#prodajna">Prodajna mjesta</a></li>
+                <li><a data-toggle="tab" href="#kontakt">Kontakt</a></li>
+                <li><a data-toggle="tab" href="#korisnickiracun"><span class="glyphicon glyphicon-user"></span> Kreiraj novi račun</a></li>
+                <li><a href="#login" data-toggle="tab"><span class="glyphicon glyphicon-log-in"></span> Log In</a></li>
+                
+            </ul>
+            
         </div>
     </nav>
 
@@ -132,7 +292,7 @@
                     <div class="panel panel-danger">
                         <div class="panel-heading">AKCIJA</div>
                         <div class="panel-body"><img src="~/Slike/gume.jpg" class="img-responsive" alt="Image"></div>
-                        <div class="panel-footer">Popust i do 30% !!!</div>
+                        <div class="panel-footer">Popust i do 30% !</div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -157,14 +317,14 @@
                           <div class="panel panel-danger">
                               <div class="panel-heading">AKCIJA</div>
                               <div class="panel-body"><img src="~/Slike/rucice.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                              <div class="panel-footer">Ručice za automatski mijenjac, budite brži od brzine!!!</div>
+                              <div class="panel-footer">Ručice za automatski mijenjac, budite brži od brzine!</div>
                           </div>
                       </div>
                       <div class="col-sm-4">
                           <div class="panel panel-success">
                               <div class="panel-heading">AKCIJA</div>
                               <div class="panel-body"><img src="~/Slike/sjedista.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                              <div class="panel-footer">Za najveću udobnost, sjedišta sa popustom do 40% !!!</div>
+                              <div class="panel-footer">Za najveću udobnost, sjedišta sa popustom do 40% !</div>
                           </div>
                       </div>
                   </div>
@@ -175,11 +335,115 @@
                         <img src="~/Slike/kamenii.jpg" class="img-responsive" alt="Cinque Terre" height="400" width="400">
                     </div>
                     <div class="col-sm-8">
-                        <h3>Dobrodošli !!! </h3>
+                        <h3>Dobrodošli ! </h3>
                         <h4>Uživajte u mnogobrojnim pogodnostima naše veleposlovnice.</h4>
                         <h5>Online naručivanje i kupovina autodijelova uvodi revoluciju u poslovanju.</h5>
                         <h6>Brze i efikasne usluge su napokon svima na raspolaganju.</h6>
                     </div>
+                </div>
+            </div>
+
+            <div id="login" class="tab-pane fade">
+                <div class="container log">
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="imgcontainer">
+                                    <img src="~/Slike/cvikeraš.png" alt="Avatar" class="avatar" height="200" width="200">
+                                </div>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h7>Unesite tražene podatke: </h7>
+                                <div class="form-group">
+                                    <label class="label email" emailfor="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Unesite email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label sifra" for="pwd">Šifra:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Unesite šifru">
+                                </div>
+                                <div class="checkbox">
+                                    <label class="label zapamti"><input type="checkbox"> Zapamti podatke</label>
+                                    <span class="psw zab">Zaboravili ste <a href="#">šifru?</a></span>
+                                </div>
+                                <button type="submit" class="button login">Log In</button>
+                               
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div id="korisnickiracun" class="tab-pane fade">
+                <div class="container racun">
+                    <h8>Unesite tražene podatke:</h8>
+                    <form>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+
+                                <div class="form-group">
+                                    <label class="label email" emailfor="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Unesite email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="label ime" for="pwd">Odaberite korisničko ime:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Unesite korisičko ime">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <label class="label sifra" for="pwd">Šifra:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Unesite šifru">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="label sifra" for="pwd">Ponovo unesite šifru:</label>
+                                    <input type="password" class="form-control" id="pwd" placeholder="Unesite šifru">
+                                </div>
+
+                                <p>Kreirajući račun pristajete na naše <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                                <button type="submit" class="button login">Sign Up</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="prodajna" class="tab-pane fade">
+                <div class="slideshow-container slajdovi">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img  src="~/Slike/prodajno1.jpg" style="width:100%;">
+                        <div class="text">Adresa:Ulica Adisa Hodžića 6</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="~/Slike/prodajno2.jpg" style="width:100%;">
+                        <div class="text">Adresa:Ulica Sedada Kamečića 8</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="~/Slike/prodajno3.jpg" style="width:100%;">
+                        <div class="text">Adresa: Ulica Esme Herende 10</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
               </div>
