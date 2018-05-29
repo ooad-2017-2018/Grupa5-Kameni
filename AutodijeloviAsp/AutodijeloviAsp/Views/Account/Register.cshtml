@@ -1,14 +1,103 @@
 ﻿@model AutodijeloviAsp.Models.RegisterViewModel
 @{
-    ViewBag.Title = "Register";
+    ViewBag.Title = "";
 }
 
 <h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+<style>
+    body {
+        background-color: black;
+        background-image: url(http://sf.co.ua/14/06/wallpaper-1130835.jpg);
+        background-size: 1400px 1300px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    h8{
+        font-size:30px;
+        color: lightblue;
+
+    }
+
+    .sifra {
+        color: lightblue;
+        font-size: 15px;
+    }
+
+    .email {
+        color: lightblue;
+        font-size: 15px;
+    }
+
+    .ime {
+        color: lightblue;
+        font-size: 15px;
+    }
+    .login {
+        background-color: lightblue;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 3px 50px;
+        margin-left:23%;
+        margin-top: 2%;
+    }
+
+    .forma{
+        margin-left:20%;
+    }
+    .tekst{
+        margin-top:2%;
+        margin-left: 15%;
+    }
+</style>
+
+<h8>Kreiranje korisničkog računa</h8>
+<header>
+    
+    <hr />
+</header>
+<form class="form forma">
+
+    <div class="row">
+        <div class="col-sm-4">
+
+            <div class="form-group">
+                <label class="label email" emailfor="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Unesite email">
+            </div>
+            <div class="form-group">
+                <label class="label ime" for="pwd">Odaberite korisničko ime:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Unesite korisičko ime">
+            </div>
+
+
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label class="label sifra" for="pwd">Šifra:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Unesite šifru">
+            </div>
+
+            <div class="form-group">
+                <label class="label sifra" for="pwd">Ponovo unesite šifru:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Unesite šifru">
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <button type="submit" class="button login">Sign Up</button>
+    <p class="tekst">Kreirajući račun pristajete na naše <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+</form>
+<!--@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
+    <h4>Za kreiranje računa priložite sljedeće podatke.</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
     <div class="form-group">
@@ -34,8 +123,9 @@
             <input type="submit" class="btn btn-default" value="Register" />
         </div>
     </div>
-}
 
+}
+    -->
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
