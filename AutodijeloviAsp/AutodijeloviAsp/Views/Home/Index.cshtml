@@ -275,17 +275,16 @@
             </div>
             
             <ul class="nav nav-tabs">
-                <li><a data-toggle="tab" href="#Onama">O nama</a></li>
                 <li class="active"><a data-toggle="tab" href="#pocetna">Pocetna</a></li>
-                <li><a data-toggle="tab" href="#katalog">Katalog</a></li>
-                <li><a data-toggle="tab" href="#servis">Servis</a></li>
-                <li><a data-toggle="tab" href="#prodajna">Prodajna mjesta</a></li>
+                <li>@Html.ActionLink("Katalog", "About", "Home")</li>
+                
                 <!--<li><a data-toggle="tab" href="#kontakt">Kontakt</a></li> -->
                 <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
                 <li>@Html.ActionLink("Log In", "Login", "Account")</li>
-                <li>@Html.ActionLink("Sign Up","Register","Account")</li>
-                 
-               
+                <li>@Html.ActionLink("Sign Up", "Register", "Account")</li>
+
+
+
 
             </ul>
             
@@ -295,54 +294,7 @@
     
 
         <div class="tab-content">
-            <div id="katalog"  class="tab-pane fade">
-                <div class="col-sm-4">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">AKCIJA</div>
-                        <div class="panel-body"><img src="~/Slike/volann.jpg" class="img-responsive" alt="Image"></div>
-                        <div class="panel-footer">Volkswagen volan po najpovoljnijoj cijeni</div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-danger">
-                        <div class="panel-heading">AKCIJA</div>
-                        <div class="panel-body"><img src="~/Slike/gume.jpg" class="img-responsive" alt="Image"></div>
-                        <div class="panel-footer">Popust i do 30% !</div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="panel panel-success">
-                        <div class="panel-heading">AKCIJA</div>
-                        <div class="panel-body"><img src="~/Slike/brisaci.jpg" class="img-responsive" alt="Image"></div>
-                        <div class="panel-footer">Za bolju vidljivost, brisaci sa popustom i do 50%</div>
-                    </div>
-                </div>
             
-        
-
-             
-                      <div class="col-sm-4">
-                          <div class="panel panel-primary">
-                              <div class="panel-heading">AKCIJA</div>
-                              <div class="panel-body"><img src="~/Slike/retrovizor.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                              <div class="panel-footer">Radi opreznije vožnje, priuštite si najkvalitetnije retrovizore po najpovoljnijoj cijeni</div>
-                          </div>
-                      </div>
-                      <div class="col-sm-4">
-                          <div class="panel panel-danger">
-                              <div class="panel-heading">AKCIJA</div>
-                              <div class="panel-body"><img src="~/Slike/rucice.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                              <div class="panel-footer">Ručice za automatski mijenjac, budite brži od brzine!</div>
-                          </div>
-                      </div>
-                      <div class="col-sm-4">
-                          <div class="panel panel-success">
-                              <div class="panel-heading">AKCIJA</div>
-                              <div class="panel-body"><img src="~/Slike/sjedista.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-                              <div class="panel-footer">Za najveću udobnost, sjedišta sa popustom do 40% !</div>
-                          </div>
-                      </div>
-                  </div>
             
             <div id="pocetna" class="tab-pane fade in active">
                 <div class="row">
@@ -430,39 +382,7 @@
                 </div>
             </div>
 
-            <div id="prodajna" class="tab-pane fade">
-                <div class="slideshow-container slajdovi">
-
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 3</div>
-                        <img  src="~/Slike/prodajno1.jpg" style="width:100%;">
-                        <div class="text">Adresa: Ulica Adisa Hodžića 6</div>
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="~/Slike/prodajno2.jpg" style="width:100%;">
-                        <div class="text">Adresa: Ulica Sedada Kamenčića 8</div>
-                    </div>
-
-                    <div class="mySlides">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="~/Slike/prodajno3.jpg" style="width:100%;">
-                        <div class="text">Adresa: Ulica Esme Herende 10</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
+            
 
            <div id="kontakt" class="tab-pane fade">
 

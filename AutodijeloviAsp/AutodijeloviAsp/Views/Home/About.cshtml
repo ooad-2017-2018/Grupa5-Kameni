@@ -1,7 +1,195 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+<style>
+    body {
+        background-color: black;
+        background-image: url(http://sf.co.ua/14/06/wallpaper-1130835.jpg);
+        background-size: 1400px 1300px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .slika {
+        margin-left:15%;
+        opacity: 0.4;
+    }
+
+        .dg{
+            margin-left:10%;
+            margin-top:2%;
+        }
+
+    .bmw {
+        background-image: url(http://galleryautomo.com/wp-content/uploads/2016/03/bmw_logo_black_background_cool_car_wallpapers_.jpg);
+        background-size: cover;
+        background-position:center;
+        border-radius:50%;
+        padding: 40px 70px;
+    }
+    .audi {
+        background-image: url(http://www.hdwallpaperspulse.com/wp-content/uploads/2014/03/25/r5.jpeg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        padding: 40px 70px;
+    }
+
+    .mercedes {
+        background-image: url(http://mbworld.org/forums/attachments/off-topic/174330d1263691675-mercedes-amg-backgrounds-iphone-mb_logo_white.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+       
+        padding: 40px 70px;
+    }
+
+
+    .porsche {
+        background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/4-porsche-logo-porsche-logo.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        padding: 40px 70px;
+    }
+
+    .w {
+        background-image: url(https://i.ytimg.com/vi/TXDh7XG0GZY/maxresdefault.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        padding: 40px 70px;
+    }
+
+    .skoda {
+        background-image: url(http://logodatabases.com/wp-content/uploads/2012/03/skoda-logo-black.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        padding: 40px 70px;
+    }
+
+    .s{
+        margin-top:5%;
+    }
+
+    .m {
+        margin-top: 5%;
+    }
+
+    .v {
+        margin-top: 5%;
+    }
+</style>
+
+<img class="slika" src="~/Slike/KATALOG.jpg" height="200" />
+<header>
+
+    <hr />
+</header>
+
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container dg">
+    <div class="row">
+
+        <div class="col-sm-4">
+            <div class="container">
+                <form action="https://www.bmw.com/en/bmw-models.html">
+                    <button class="bmw"></button>
+                </form>
+            </div>
+            <div class="container v">
+                <form action="http://www.vw.com">
+                    <button class="w"></button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="container">
+                <form action="https://www.bmw.com/en/bmw-models.html">
+                    <button class="porsche"></button>
+                </form>
+            </div>
+            <div class="container m">
+                <form action="https://www.mercedes-amg.com/en/vehicles.html">
+                    <button class="mercedes"></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="container">
+                <form action="https://www.audi.com/en/models.html">
+                    <button class="audi"></button>
+                </form>
+            </div>
+
+            <div  class="container s">
+                <form action="http://www.skoda-auto.com/">
+                    <button class="skoda"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+ 
+</div>
+
+        
+
