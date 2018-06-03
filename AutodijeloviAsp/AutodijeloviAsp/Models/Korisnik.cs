@@ -5,7 +5,7 @@ using System.Web;
 
 namespace AutodijeloviAsp.Models
 {
-    public class Kupac
+    public class Korisnik
     {
         string ime, prezime;
         DateTime datumRegistrovanja = new DateTime();
@@ -13,7 +13,7 @@ namespace AutodijeloviAsp.Models
         float popust;
         int brojNarudzbi;
 
-        public Kupac()
+        public Korisnik()
         {
 
         }

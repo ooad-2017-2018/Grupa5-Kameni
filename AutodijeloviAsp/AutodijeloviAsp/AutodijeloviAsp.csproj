@@ -197,8 +197,9 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AutodijeloviContext.cs" />
+    <Compile Include="Models\Database.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Kupac.cs" />
+    <Compile Include="Models\Korisnik.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -309,7 +310,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59772</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
