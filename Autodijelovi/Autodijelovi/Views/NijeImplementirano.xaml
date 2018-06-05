@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Autodijelovi.NijeImplementirano"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Gray">
+        <TextBlock HorizontalAlignment="Left" Margin="212,141,0,0" Text="BUDITE STRPLJIVI !!!" VerticalAlignment="Top" FontSize="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="253,349,0,0" Text="Nažalost, ovaj dio aplikacije još uvijek nije implementiran." TextWrapping="Wrap" VerticalAlignment="Top" FontSize="60" Width="780"/>
+        <Button Content="BACK" HorizontalAlignment="Left" Margin="92,80,0,0" VerticalAlignment="Top" FontSize="30"/>
+
+
+    </Grid>
+</Page>

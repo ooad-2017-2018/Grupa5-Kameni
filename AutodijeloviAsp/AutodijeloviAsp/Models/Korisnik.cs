@@ -7,33 +7,13 @@ namespace AutodijeloviAsp.Models
 {
     public class Korisnik
     {
-        string ime, prezime;
-        DateTime datumRegistrovanja = new DateTime();
-        string korisnickoIme, sifra;
-        float popust;
-        int brojNarudzbi;
+        public string KorisnikID { get; set; }
+        public string userName { get; set; }
+        public string password { get; set; }
+        public string email { get; set; }
+        public DateTime datumRegistrovanja { get; set; }
+        public float popust { get; set; }
+        public int brojNarudzbi { get; set; }
 
-        public Korisnik()
-        {
-
-        }
-        /* public Kupac(string ime, string prezime, DateTime datumRegistrovanja, string korisnickoIme, string sifra, float popust, int brojNarudzbi)
-         {
-             this.Ime = ime;
-             this.Prezime = prezime;
-             this.DatumRegistrovanja = datumRegistrovanja;
-             this.KorisnickoIme = korisnickoIme;
-             this.Sifra = sifra;
-             this.Popust = popust;
-             this.BrojNarudzbi = brojNarudzbi;
-         }
-         */
-        public string Ime { get => ime; set => ime = value; }
-        public string Prezime { get => prezime; set => prezime = value; }
-        public DateTime DatumRegistrovanja { get => datumRegistrovanja; set => datumRegistrovanja = value; }
-        public string KorisnickoIme { get => korisnickoIme; set => korisnickoIme = value; }
-        public string Sifra { get => sifra; set => sifra = value; }
-        public float Popust { get => popust; set => popust = value; }
-        public int BrojNarudzbi { get => brojNarudzbi; set => brojNarudzbi = value; }
     }
 }

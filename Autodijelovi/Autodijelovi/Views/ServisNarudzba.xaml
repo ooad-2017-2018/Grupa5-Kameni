@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Autodijelovi.ServisNarudzba"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Visible">
+        <Image Source="Assets/automeh.jpg" Height="220" Margin="-421,470,421,0"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="424,215,0,0" Text="Kupac:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="139,332,0,0" Text="Automobil (reg. oznake):" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="355,427,0,0" Text="Opis kvara:" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        <TextBox x:Name="textBoxKupac" HorizontalAlignment="Left" Margin="606,215,0,0" Text="" VerticalAlignment="Top" Height="48" Width="386"/>
+        <TextBox x:Name="textBoxAutomobil" HorizontalAlignment="Left" Margin="606,323,0,0" Text="" VerticalAlignment="Top" Height="48" Width="386"/>
+        <TextBox x:Name="textBoxOpisKvara" HorizontalAlignment="Left" Margin="606,427,0,0" Text="" VerticalAlignment="Top" Height="187" Width="386"/>
+        <Button x:Name="ButtonNaruci" Content="Naruci" HorizontalAlignment="Left" Margin="1036,607,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Black"  BorderBrush="DeepPink" Width="195"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="355,56,0,0" Text="Zahtjev za servis" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="70" FontWeight="Bold" FontStyle="Italic" FontFamily="Axure Handwriting" Foreground="Black" />
+        <Button Content="BACK" HorizontalAlignment="Left" Margin="85,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.369,0.174" FontSize="25" Click="Button_Click"/>
+
+    </Grid>
+</Page>

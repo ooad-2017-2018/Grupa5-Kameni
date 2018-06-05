@@ -10,11 +10,11 @@ namespace AutodijeloviAsp.Models
 {
     public class AutodijeloviContext : DbContext
     {
-        public AutodijeloviContext() : base("DefaultConnection") 
+        public AutodijeloviContext() : base("AzureConnection") 
  {
         }
         //dodavanjem klasa iz modela kao DbSet iste će biti mapirane u bazu podataka
-        public DbSet<Korisnik> Student { get; set; }
+        public DbSet<Korisnik> Korisnik { get; set; }
         
         //Ova funkcija se koriste da bi se ukinulo automatsko dodavanje množine u nazive
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

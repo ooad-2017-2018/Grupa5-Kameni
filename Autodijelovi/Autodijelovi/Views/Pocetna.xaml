@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Autodijelovi.Pocetna"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Autodijelovi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/pocetna.jpg" Margin="393,126,0,-73"/>
+        <TextBlock HorizontalAlignment="Left" Margin="201,47,0,0" Text="Autodijelovi Kameni" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="100" Width="989" FontFamily="Axure Handwriting"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,306,0,0" Text="Uloga korisnika: " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50" FontFamily="Axure Handwriting" SelectionChanged="TextBlock_SelectionChanged"/>
+        <Button Content="Kupac" HorizontalAlignment="Left" Margin="141,441,0,0" VerticalAlignment="Top" FontSize="30" Width="177" Click="Button_Click" BorderBrush="Black" BorderThickness="5"/>
+        <Button Content="Uposlenik" HorizontalAlignment="Left" Margin="141,538,0,0" VerticalAlignment="Top" FontSize="30" Width="279" BorderBrush="Black" BorderThickness="5" Click="Button_Click_1"/>
+        <Button Content="Dostava" HorizontalAlignment="Left" Margin="141,628,0,0" VerticalAlignment="Top" FontSize="30" Width="279" BorderBrush="Black" BorderThickness="5" Click="Button_Click_2"/>
+        <Frame Name="Sljedeci" Navigated="Sljedeci_Navigated_1"/>
+    </Grid>
+</Page>
