@@ -1,0 +1,44 @@
+Observer patern:
+Uloga Observer paterna je da uspostavi relaciju izmeðu objekata tako kada jedan objekat promijeni stanje, drugi zainteresirani objekti se obavještavaju.
+U klasi "Artikal" postoji atribut "minDozvoljenaKolicina : int" koja predstavlja neki vid „alarma“ za nabavku atrikala. Kada stanje artikala u skladištu dostigne vrijednost ovog atributa administratori se obavještavaju.
+
+State patern:
+State Pattern je dinamièka verzija Strategy paterna. 
+Objekat mijenja naèin ponašanja na osnovu trenutnog stanja. 
+U klasi "Kupac" postoji atribut "popust : float". Kada ovaj atribut ima pozitivnu vrijednost klijent ima pravo na popust i raèun mu se obraèunava shodno tome, osim toga ima i druge privilegije u sistemu.
+
+TemplateMethod patern:
+Struktura algoritma se ne mijenja - mali dijelovi operacija se izdvajaju i ti se dijelovi mogu implementirati razlièito.
+U aplikaciji autodijelovi, atrikli se mogu pretraživati na mnogo razlièitih naèina, prema automobilu, godištu, motoru..., ukoliko korisnik ne unese sve podatke, što je moguæe da ne zna. U tom sluèaju se poziva odreðeni niz akcija koji radi sa „onim što ima“, dakle prima atribute koji su unešeni i na osnovu njih daje sve rezultate koji odgovaraju onim podacima koji su dati.
+
+Facade patern:
+Facade patern se koristi kada sistem ima više identificiranih podsistema pri èemu su apstrakcije i implementacije podsistema usko povezane. Osnovna namjena Facade paterna je da osigura više pogleda visokog nivoa na podsisteme (implementacija podsistema skrivena od korisnika).
+
+Singleton patern: 
+Uloga Singleton paterna je da osigura da se klasa može instancirati samo jednom i da osigura globalni pristup kreiranoj instanci klase.
+Primjer implementacije singleton paterna u aplikaciji autodijelovi jeste da se kreira jedan objekat koji èuva informaciju o tome koliko je korisnika logovano u odreðenom trenutku
+
+Prototype patern:
+Uloga Prototype paterna je da kreira nove objekte klonirajuæi jednu od postojeæih prototip instanci (postojeæi objekat). 
+Ako je trošak kreiranja novog objekta velik i kreiranje objekta je resursno zahtjevno tada se vrši kloniranje veæ postojeæeg objekata. 
+Jedan od naèina da se implementira ovaj patern u našoj aplikaciji jeste da se prilikom obrade zahtjeva za popust i drugih sliènih zahtjeva (analiza poslovanja) umjesto da se svaki put traže i èitaju podaci iz baze, može se instancirati klasa skrivena od korisnika tako da se ti podaci kopiraju u tu klasu te da se ona prlikom višestrukih obraèuna klonira.
+
+Factory Method patern:
+Uloga Factory Method paterna je da omoguæi kreiranje objekata na naèin da podklase odluèe koju klasu instancirati. 
+Factory Method instancira odgovarajuæu podklasu (izvedenu klasu) preko posebne metode na osnovu informacije od strane klijenta ili na osnovu tekuæeg stanja. 
+Jedan od naèina implementacije ovog paterna jeste da se kreira Factory Method patern koji æe odluèivati od kojeg dobavljaèa æe naruèivati dijelove u zavisnosti od toga koje su cijene na tržištu.
+
+Builder patern:
+Uloga Builder paterna je odvajanje specifikacije kompleksnih objekata od njihove stvarne konstrukcije. 
+Isti konstrukcijski proces može kreirati razlièite reprezentacije.
+
+Flyweight patern:
+Postoje situacije u kojima je potrebno da se omoguæi razlikovanje dijela klase koji je uvijek isti za sve odreðene objekte te klase (glavno stanje) od dijela klase koji nije uvijek isti za sve odreðene objekte te klase (sporedno stanje). 
+Osnovna namjena Flyweight paterna je upravo da se omoguæi da više razlièitih objekata dijele isto glavno stanje, a imaju razlièito sporedno stanje. 
+Jedan od naèina implementacije flyweight paterna jeste da se primjeni na objektima klase "Arikal", naime u stvarnosti postoji mnogo sliènih artikala (razlika samo u proizvoðaèu, ili tipu motora).
+
+Bridge patern:
+Osnovna namjena Bridge paterna je da omoguæi odvajanje apstrakcije i implementacije neke klase tako da ta klasa može posjedovati više razlièitih apstrakcija i više razlièitih implementacija za pojedine apstrakcije. Bridge patern pogodan je kada se implementira nova verzija softvera a postojeæa mora ostati u funkciji. 
+
+
+
