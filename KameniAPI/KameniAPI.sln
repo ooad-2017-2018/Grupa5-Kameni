@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KameniAPI", "KameniAPI\KameniAPI.csproj", "{57F07C96-AD4B-48A1-ACE8-907F0C34DCEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57F07C96-AD4B-48A1-ACE8-907F0C34DCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F07C96-AD4B-48A1-ACE8-907F0C34DCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F07C96-AD4B-48A1-ACE8-907F0C34DCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F07C96-AD4B-48A1-ACE8-907F0C34DCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20207213-59B4-419D-AA33-6D9E671AEB42}
+	EndGlobalSection
+EndGlobal
